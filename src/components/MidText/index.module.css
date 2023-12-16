@@ -1,0 +1,34 @@
+.container {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.container_text_1 {
+  font-size: 48px;
+  color: #1b0b3a;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container_text_2 {
+  font-size: 24px;
+  color: #1b0b3acc;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.container_button {
+  background-color: #1b0b3a;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  /* width: 100%; */
+}
+
+.container_button_container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

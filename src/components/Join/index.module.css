@@ -1,0 +1,59 @@
+.container {
+  background: linear-gradient(101.02deg, #1b0b3a 52.24%, #7756fe 184.85%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.image {
+  margin: auto;
+}
+
+.text_1 {
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.text_2 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 400;
+  width: 50%;
+  margin: auto;
+}
+
+.button_container {
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button {
+  background: linear-gradient(150.43deg, #7756fe 4.33%, #eadeff 216.94%),
+    linear-gradient(
+      93.57deg,
+      rgba(255, 255, 255, 0.32) -141.51%,
+      rgba(234, 222, 255, 0.32) 125.02%
+    );
+  color: white;
+  padding: 15px 40px 15px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+  outline: none;
+  /* border: 2px solid; */
+  border: 5.6px solid rgba(119, 86, 254, 0.2);
+  /* border: 5.6px solid; */
+  /* border-image-source: linear-gradient(
+    276.8deg,
+    #1b0b3a -62.77%,
+    rgba(119, 86, 254, 0.2) 412.52%
+  ); */
+}

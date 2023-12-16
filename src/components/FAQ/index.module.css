@@ -1,0 +1,36 @@
+.container {
+  margin-top: 100px;
+  width: 90%;
+  margin: auto;
+}
+
+.text_1 {
+  color: #1b0b3a;
+  font-size: 56px;
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  line-height: 60px;
+  margin-bottom: 80px;
+}
+
+.questions {
+  background: linear-gradient(
+    0deg,
+    rgba(234, 222, 255, 0.4),
+    rgba(234, 222, 255, 0.4)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.questions p {
+  font-size: 18px;
+}
