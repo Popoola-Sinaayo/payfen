@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 import lendIcon from "../../assets/LendIcon.svg";
-import phoneIcon from "../../assets/PhoneIcon.svg";
+import phoneIcon from "../../assets/PhoneImage.png";
 import exchangeIcon from "../../assets/ExchangeIcon.svg";
 import chipIcon from "../../assets/ChipIcon.svg";
 import mortgageIcon from "../../assets/MortgageIcon.svg";
@@ -20,8 +20,11 @@ const Explore = () => {
             with our solution in a matter of days.
           </p>
         </div>
-        <div>
-          <img src={phoneIcon} />
+        <div className={styles.description_container_item_image_container}>
+          <img
+            src={phoneIcon}
+            className={styles.description_container_item_image}
+          />
         </div>
       </div>
       <div className={styles.features_container}>

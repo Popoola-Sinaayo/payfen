@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className={styles.container}>
       <div className={styles.top_item_container}>
-        <p>Our Services</p>
+        <p>Our Solution</p>
       </div>
       <div className={styles.container_text}>
         <p className={styles.container_text_1}>Revolutionize Your Lending</p>
@@ -29,7 +29,7 @@ const Services = () => {
             <img src={hierarchyLink} />
             <p>Easy API Integration</p>
           </div>
-          <div>
+          <div className={styles.services_item_text}>
             <p className={styles.services_item_text_1}>
               Elevate Your Platform with
             </p>
@@ -51,7 +51,7 @@ const Services = () => {
             <img src={verifiedIcon} />
             <p>Robust User Verification</p>
           </div>
-          <div>
+          <div className={styles.services_item_text}>
             <p className={styles.services_item_text_1}>
               Advanced User Verification
             </p>
@@ -75,7 +75,7 @@ const Services = () => {
             <img src={smartConnectorIcon} />
             <p>Smart Decision Engine</p>
           </div>
-          <div>
+          <div className={styles.services_item_text}>
             <p className={styles.services_item_text_1}>
               Intelligent Credit Score
             </p>

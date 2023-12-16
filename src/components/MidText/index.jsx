@@ -1,4 +1,3 @@
-
 import styles from "./index.module.css";
 
 const MidText = () => {
@@ -18,10 +17,12 @@ const MidText = () => {
         customer and grow your business.
       </p>
       <div className={styles.container_button_container}>
-        <button className={styles.container_button}>Get Started</button>
+        <div className={styles.container_button_container_white_bg}>
+          <button className={styles.container_button}>Talk to an expert</button>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default MidText
+export default MidText;

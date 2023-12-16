@@ -2,6 +2,7 @@
   margin-top: 100px;
   width: 90%;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 .text_1 {
@@ -33,4 +34,19 @@
 
 .questions p {
   font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .text_1 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .questions {
+    width: 90%;
+  }
+  .questions p {
+    font-size: 14px;
+  }
 }

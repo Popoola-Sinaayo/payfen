@@ -15,7 +15,7 @@
 .container_top_item {
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 150px;
   padding: 5px 10px 5px 10px;
   border-radius: 40px;
   margin: auto;
@@ -59,4 +59,16 @@
   margin: auto;
   margin-top: 60px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .container_text_1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .container_text_2 {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+  }
 }

@@ -13,7 +13,9 @@ const Join = () => {
         boring “technical stuff”
       </p>
       <div className={styles.button_container}>
-        <button className={styles.button}>Talk to an expert</button>
+        <div className={styles.button_container_white_bg}>
+          <button className={styles.button}>Talk to an expert</button>
+        </div>
       </div>
     </div>
   );
