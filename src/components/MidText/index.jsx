@@ -1,8 +1,13 @@
 import styles from "./index.module.css";
-
+import { motion } from "framer-motion";
 const MidText = () => {
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 2 } }}
+      viewport={{ margin: "-250px 0px -80px 0px" }}
+      className={styles.container}
+    >
       <p className={styles.container_text_1}>
         We did the hard work just for you
       </p>
@@ -21,7 +26,7 @@ const MidText = () => {
           <button className={styles.container_button}>Talk to an expert</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

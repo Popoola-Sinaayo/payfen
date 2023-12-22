@@ -74,10 +74,32 @@ const Banner = () => {
           className={styles.banner_container_item}
         >
           <img src={profileImage} className={styles.banner_image_item} />
-          <div className={styles.percentage_details_image}>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1,
+              delay: 2,
+              // stiffness: 100,
+              bounce: 0.5,
+              type: "spring",
+            }}
+            className={styles.percentage_details_image}
+          >
             <img src={percentageDetails} />
-          </div>
-          <div className={styles.confirmation_container}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1,
+              delay: 2.2,
+              // stiffness: 100,
+              bounce: 0.5,
+              type: "spring",
+            }}
+            className={styles.confirmation_container}
+          >
             <p className={styles.confirmation_container_text}>Confirmation</p>
             <div>
               <div className={styles.confirmation_container_item}>
@@ -98,8 +120,19 @@ const Banner = () => {
                 </button>
               </div>
             </div>
-          </div>
-          <div className={styles.account_vertification_container}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1,
+              delay: 2.4,
+              // stiffness: 100,
+              bounce: 0.5,
+              type: "spring",
+            }}
+            className={styles.account_vertification_container}
+          >
             <p className={styles.account_verification_text}>
               Account Verification
             </p>
@@ -124,7 +157,7 @@ const Banner = () => {
                 <img src={largeCheckIcon} />
               </div>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>

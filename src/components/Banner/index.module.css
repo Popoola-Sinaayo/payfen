@@ -268,7 +268,7 @@
   color: #7756fe;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1350px) {
   .banner_container {
     flex-direction: column;
   }

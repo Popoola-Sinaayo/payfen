@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import { motion } from "framer-motion";
 import lendIcon from "../../assets/LendIcon.svg";
 import phoneIcon from "../../assets/PhoneImage.png";
 import exchangeIcon from "../../assets/ExchangeIcon.svg";
@@ -8,7 +9,12 @@ import connectionLink from "../../assets/ConnectionLink.svg";
 
 const Explore = () => {
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, transition: { duration: 2 } }}
+      viewport={{ margin: "-250px 0px 50px 0px" }}
+      className={styles.container}
+    >
       <p className={styles.container_text_1}>Explore the innovative</p>
       <p className={styles.container_text_1}>Projects empowered by Payfen.</p>
       <div className={styles.description_container}>
@@ -28,8 +34,17 @@ const Explore = () => {
         </div>
       </div>
       <div className={styles.features_container}>
-        <div className={styles.features_container_item}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 1, delay: 0.5, type: "spring" },
+          }}
+          viewport={{ margin: "-250px 0px -80px 0px" }}
+          className={styles.features_container_item}
+        >
           <img src={exchangeIcon} />
+
           <div className={styles.features_container_item_text}>
             <p className={styles.features_container_item_text_1}>
               Buy Now, Pay Later
@@ -38,8 +53,16 @@ const Explore = () => {
               Create your own bespoke BNPL product with Payfen with zero stress.
             </p>
           </div>
-        </div>
-        <div className={styles.features_container_item}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 1, delay: 0.8, type: "spring" },
+          }}
+          viewport={{ margin: "-250px 0px -80px 0px" }}
+          className={styles.features_container_item}
+        >
           <img src={chipIcon} />
           <div className={styles.features_container_item_text}>
             <p className={styles.features_container_item_text_1}>
@@ -50,8 +73,16 @@ const Explore = () => {
               as you want with a single button.
             </p>
           </div>
-        </div>
-        <div className={styles.features_container_item}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            transition: { duration: 1, delay: 1.1, bounce: 1, type: "tween" },
+          }}
+          viewport={{ margin: "-250px 0px -80px 0px" }}
+          className={styles.features_container_item}
+        >
           <img src={mortgageIcon} />
           <div className={styles.features_container_item_text}>
             <p className={styles.features_container_item_text_1}>
@@ -62,7 +93,7 @@ const Explore = () => {
               customer’s financials situation with indepth data.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={styles.connection_container}>
         <img src={connectionLink} />
@@ -91,7 +122,7 @@ const Explore = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

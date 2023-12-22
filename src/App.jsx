@@ -7,10 +7,11 @@ import Join from "./components/Join";
 import MidText from "./components/MidText";
 import Navigation from "./components/Navigation";
 import Services from "./components/Services";
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 function App() {
   return (
-    <>
+    <ReactLenis root options={{ duration: 1.5, smoothTouch: true }}>
       <Navigation />
       <Banner />
       <MidText />
@@ -20,7 +21,7 @@ function App() {
       <Faq />
       <Join />
       <Footer />
-    </>
+    </ReactLenis>
   );
 }
 
